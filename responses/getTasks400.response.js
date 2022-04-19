@@ -22,12 +22,9 @@ module.exports = Object.freeze({
           "        }\n" +
           "\n" +
           "        def encodedAppUser = Base64.getEncoder().encodeToString(bytes);\n" +
-          '        def encodedAppUserReplaced = encodedAppUser.replace("=","");\n' +
-          "        def encodedAppUserReversed = new StringBuilder(encodedAppUserReplaced).reverse().toString();\n" +
-          "        def encodedAppUserUpper = encodedAppUserReversed.toUpperCase();\n" +
           "\n" +
           "        ctx._source.remove('appUser');\n" +
-          "        ctx._source.put('appUser', encodedAppUserUpper);\n" +
+          "        ctx._source.put('appUser', encodedAppUser);\n" +
           "    }', options={}, params={}}",
         start_time_in_millis: 1648534859901,
         running_time_in_nanos: 1138861247,
