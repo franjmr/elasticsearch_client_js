@@ -1,0 +1,21 @@
+{
+  "name": "franjmr-elasticsearch-client-js",
+  "version": "1.0.0",
+  "description": "Interact with the Kibana Cluster using the official Node.js client for Elasticsearch",
+  "main": "index.js",
+  "scripts": {
+    "cluster:health": "node src/cluster.health.js",
+    "obfuscateAppUserField:updateByQuery:filtered": "cross-env INDEX_FILTER=index_01 node src/obfuscateAppUserField.updateByQuery.js"
+  },
+  "author": "franjmr",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@elastic/elasticsearch": "^6.8.7",
+    "cross-env": "^7.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franjmr/elasticsearch_client_js.git"
+  }
+}

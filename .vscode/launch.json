@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Debug - Update By Query",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\src\\obfuscateAppUserField.updateByQuery.js",
+            "env": {
+                "INDEX_FILTER": "index_01"
+            }
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Debug - Cluster Health",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\src\\cluster.health.js",
+        }
+    ]
+}
