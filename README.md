@@ -24,9 +24,8 @@ For example:
 npm run cluster:health
 ```
 
-```json
-//Client response
-Cluster health: {
+```typescript
+{
   body: {
     cluster_name: 'docker-cluster',
     status: 'green',
@@ -55,8 +54,6 @@ Cluster health: {
     request: { params: [Object], options: [Object], id: 1 },
     name: 'elasticsearch-js',
     connection: {
-      url: 'http://localhost:9200/',
-      id: 'http://localhost:9200/',
       headers: {},
       deadCount: 0,
       resurrectTimeout: 0,
